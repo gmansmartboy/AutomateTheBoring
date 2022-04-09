@@ -55,4 +55,19 @@ print(spam[:]) # Prints ['cat', 'bat', 'rat', 'elephant']
 # The len() function will return the number of
 # values that are in a list value passed to it.
 spam = ['cat', 'bat', 'rat', 'elephant']
-print(len(spam)) # Prints 3
+print(len(spam)) # Prints 4
+
+# Changing values in a list with indexes.
+spam = ['cat', 'bat', 'rat', 'elephant']
+print('spam = ' + str(spam))
+spam[1] = 'aardvark'
+print(spam) # Prints ['cat', 'aardvark', 'rat', 'elephant']
+spam[2] = spam[1]
+print(spam) # Prints ['cat', 'aardvark', 'aardvark', 'elephant']
+spam[-1] = 12345
+print(spam) # Prints ['cat', 'aardvark', 'aardvark', 12345]
+
+# List concatenation and List Replication.
+# 
+print([1, 2, 3] + ['A', 'B', 'C'])
+# Prints [1, 2, 3, 'A', 'B', 'C']
