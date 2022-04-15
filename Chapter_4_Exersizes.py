@@ -1,3 +1,7 @@
+# Notes taken from Al Sweigart's book, 
+# 'Automate the Boring Stuff with Python'
+# https://automatetheboringstuff.com
+
 # Lists in Python
 # Lists with ints. 
 spam = [1, 2, 3]
@@ -102,3 +106,35 @@ for i in range(4):
 supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
   for i in range(len(supplies)):
     print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+    
+# The in and not in Operators #
+# You can determine whether a value is or isn’t
+# in a list with the in and not in operators. 
+print(['hello', 'hi', 'howdy', 'heyas'])
+'howdy' in ['hello', 'hi', 'howdy', 'heyas']  # Evaluates to True
+
+
+# The Multiple Assignment Trick #
+# The multiple assignment trick (technically called
+# tuple unpacking) is a shortcut that lets you assign
+# multiple variables with the values in a list in
+# one line of code.
+
+cat = ['fat', 'gray', 'loud']
+size, color, disposition = cat
+# The number of variables and the length of the list must
+# be exactly equal, or Python will give you a ValueError:
+
+
+# Using the enumerate() Function with Lists # 
+# On each iteration of the loop, enumerate() will return
+# two values: the index of the item in the list, and 
+# the item in the list itself.
+
+supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
+print('supplies = ' + str(supplies))
+for index, item in enumerate(supplies):
+print('Index ' + str(index) + ' in supplies is: ' + item)
+
+
+
