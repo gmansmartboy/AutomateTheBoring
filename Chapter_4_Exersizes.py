@@ -68,7 +68,6 @@ spam[-1] = 12345
 print(spam) # Prints ['cat', 'aardvark', 'aardvark', 12345]
 
 # List concatenation and List Replication.
-# 
 print([1, 2, 3] + ['A', 'B', 'C'])
 # Prints [1, 2, 3, 'A', 'B', 'C']
 
@@ -80,4 +79,26 @@ print(spam) # Prints ['cat', 'bat', 'elephant']
 del spam[2] # Deletes 'bat'
 print(spam) # Prints ['cat', 'elephant']
 
+# Working with Lists
+# You can use a single variable that contains a list value.
+# This new version uses a single list and can store
+# any number of cats that the user types in.
 
+catNames = []
+while True:
+  print('Enter the name of cat ' + str(len(catNames) + 1) + ' (Or enter nothing to stop.):')
+  name = input()
+  if name == '':
+    break
+  catNames = catNames + [name] # List concatination
+print('The cat names are: ')
+for name in catNames:
+  print('  ' + name)
+
+  # Using for Loops with Lists
+for i in range(4):
+  print(i)  # Prints 0-3
+  
+supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
+  for i in range(len(supplies)):
+    print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
