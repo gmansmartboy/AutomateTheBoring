@@ -71,3 +71,13 @@ print(spam) # Prints ['cat', 'aardvark', 'aardvark', 12345]
 # 
 print([1, 2, 3] + ['A', 'B', 'C'])
 # Prints [1, 2, 3, 'A', 'B', 'C']
+
+# Removing Values from Lists with del Statements
+spam = ['cat', 'bat', 'rat', 'elephant']
+print(spam) # Prints ['cat', 'bat', 'rat', 'elephant']
+del spam[2] # Deletes 'rat'
+print(spam) # Prints ['cat', 'bat', 'elephant']
+del spam[2] # Deletes 'bat'
+print(spam) # Prints ['cat', 'elephant']
+
+
