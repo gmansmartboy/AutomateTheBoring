@@ -137,4 +137,30 @@ for index, item in enumerate(supplies):
 print('Index ' + str(index) + ' in supplies is: ' + item)
 
 
+# As a shortcut, you can use the augmented assignment operator 
+# += to do the same thing:# spam += 1 >>> spam = spam + 1
+
+# spam -= 1 >>> spam = spam - 1
+# spam *= 1 >>> spam = spam * 1
+# spam /= 1 >>> spam = spam / 1
+# spam %= 1 >>> spam = spam % 1
+# Example below
+spam = 'Hello,'
+print(spam)
+spam += ' world!'
+print(spam)
+
+bacon = ['Zophie']
+print(bacon)
+bacon *= 3
+print(bacon)
+
+# Methods
+# A method is the same thing as a function, except it is 
+# “called on” a value.
+
+
+
+
+
 
