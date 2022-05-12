@@ -104,8 +104,8 @@ for i in range(4):
   print(i)  # Prints 0-3
   
 supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
-  for i in range(len(supplies)):
-    print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+for i in range(len(supplies)):
+  print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
     
 # The in and not in Operators #
 # You can determine whether a value is or isn’t
@@ -134,7 +134,7 @@ size, color, disposition = cat
 supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
 print('supplies = ' + str(supplies))
 for index, item in enumerate(supplies):
-print('Index ' + str(index) + ' in supplies is: ' + item)
+  print('Index ' + str(index) + ' in supplies is: ' + item)
 
 
 # As a shortcut, you can use the augmented assignment operator 
